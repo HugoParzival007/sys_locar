@@ -13,5 +13,70 @@ public class ContratoLocacao {
     List<Locacao> listLocacao = new ArrayList<>();
     private float valorTotal;
     private Funcionario funcionario;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public Date getDataContrato() {
+        return dataContrato;
+    }
+
+    public void setDataContrato(Date dataContrato) {
+        this.dataContrato = dataContrato;
+    }
+
+    public float getValorCaucao() {
+        return valorCaucao;
+    }
+
+    public void setValorCaucao(float valorCaucao) {
+        this.valorCaucao = valorCaucao;
+    }
+
+    public Enum getStatus() {
+        return status;
+    }
+
+    public void setStatus(Enum status) {
+        this.status = status;
+    }
+
+    public List<Locacao> getListLocacao() {
+        return listLocacao;
+    }
+
+    public void setListLocacao(List<Locacao> listLocacao) {
+        this.listLocacao = listLocacao;
+    }
+
+    public float getValorTotal() {
+        return valorTotal;
+    }
+
+    public void setValorTotal(float valorTotal) {
+        this.valorTotal = valorTotal;
+    }
+
+    public Funcionario getFuncionario() {
+        return funcionario;
+    }
+
+    public void setFuncionario(Funcionario funcionario) {
+        this.funcionario = funcionario;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
     private Cliente cliente;
 }
