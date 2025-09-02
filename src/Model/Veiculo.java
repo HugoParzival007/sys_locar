@@ -10,6 +10,17 @@ public class Veiculo {
     private String cor;
     private Modelo modelo;
 
+    public Veiculo(long id, Enum status, int km, String placa, String chassi, String renavam, String cor, Modelo modelo) {
+        this.id = id;
+        this.status = status;
+        this.km = km;
+        this.placa = placa;
+        this.chassi = chassi;
+        this.renavam = renavam;
+        this.cor = cor;
+        this.modelo = modelo;
+    }
+
     public Enum getStatus() {
         return status;
     }

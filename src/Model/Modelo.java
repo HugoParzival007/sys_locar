@@ -11,6 +11,14 @@ public class Modelo {
     private int qtModelo;
     private List<Veiculo> listVeiculo=new ArrayList<>();
 
+    public Modelo(long id, String nome, Date ano, int qtModelo, List<Veiculo> listVeiculo) {
+        this.id = id;
+        this.nome = nome;
+        this.ano = ano;
+        this.qtModelo = qtModelo;
+        this.listVeiculo = listVeiculo;
+    }
+
     public long getId() {
         return id;
     }

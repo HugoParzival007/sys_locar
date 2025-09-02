@@ -3,6 +3,13 @@ package Model;
 public class Pagamento {
     private long id;
     private Enum tipoPagamento;
+    private float valorTotal;
+
+    public Pagamento(long id, Enum tipoPagamento, float valorTotal) {
+        this.id = id;
+        this.tipoPagamento = tipoPagamento;
+        this.valorTotal = valorTotal;
+    }
 
     public long getId() {
         return id;
@@ -28,5 +35,5 @@ public class Pagamento {
         this.valorTotal = valorTotal;
     }
 
-    private float valorTotal;
+
 }

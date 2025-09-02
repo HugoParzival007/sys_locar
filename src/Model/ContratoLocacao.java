@@ -13,6 +13,18 @@ public class ContratoLocacao {
     List<Locacao> listLocacao = new ArrayList<>();
     private float valorTotal;
     private Funcionario funcionario;
+    private Cliente cliente;
+
+    public ContratoLocacao(long id, Date dataContrato, float valorCaucao, Enum status, List<Locacao> listLocacao, float valorTotal, Funcionario funcionario, Cliente cliente) {
+        this.id = id;
+        this.dataContrato = dataContrato;
+        this.valorCaucao = valorCaucao;
+        this.status = status;
+        this.listLocacao = listLocacao;
+        this.valorTotal = valorTotal;
+        this.funcionario = funcionario;
+        this.cliente = cliente;
+    }
 
     public long getId() {
         return id;
@@ -78,5 +90,4 @@ public class ContratoLocacao {
         this.cliente = cliente;
     }
 
-    private Cliente cliente;
 }

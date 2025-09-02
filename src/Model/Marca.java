@@ -6,6 +6,13 @@ import java.util.List;
 public class Marca {
     private long id;
     private String nome;
+    private List<Modelo> listModelo = new ArrayList<>();
+
+    public Marca(long id, String nome, List<Modelo> listModelo) {
+        this.id = id;
+        this.nome = nome;
+        this.listModelo = listModelo;
+    }
 
     public long getId() {
         return id;
@@ -31,5 +38,5 @@ public class Marca {
         this.listModelo = listModelo;
     }
 
-    private List<Modelo> listModelo = new ArrayList<>();
+
 }

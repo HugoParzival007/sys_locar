@@ -9,6 +9,16 @@ public class Usuario {
     private Contato contato;
     private Endereco endereco;
 
+    public Usuario(long id, String nome, String cpf, String login, String senha, Contato contato, Endereco endereco) {
+        this.id = id;
+        this.nome = nome;
+        this.cpf = cpf;
+        this.login = login;
+        this.senha = senha;
+        this.contato = contato;
+        this.endereco = endereco;
+    }
+
     public String getCpf() {
         return cpf;
     }

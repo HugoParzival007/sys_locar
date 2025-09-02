@@ -8,6 +8,13 @@ public class Manutencao {
     private Date data;
     private float custo;
 
+    public Manutencao(long id, String descrição, Date data, float custo) {
+        this.id = id;
+        this.descrição = descrição;
+        this.data = data;
+        this.custo = custo;
+    }
+
     public long getId() {
         return id;
     }

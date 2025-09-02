@@ -4,6 +4,11 @@ public class Cliente {
     private long id;
     private String cnh;
 
+    public Cliente(long id, String cnh) {
+        this.id = id;
+        this.cnh = cnh;
+    }
+
     public long getId() {
         return id;
     }

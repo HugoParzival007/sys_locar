@@ -3,6 +3,15 @@ package Model;
 public class Contato {
     private long id;
     private String email;
+    private String telefone;
+    private String celular;
+
+    public Contato(long id, String email, String telefone, String celular) {
+        this.id = id;
+        this.email = email;
+        this.telefone = telefone;
+        this.celular = celular;
+    }
 
     public long getId() {
         return id;
@@ -35,7 +44,4 @@ public class Contato {
     public void setCelular(String celular) {
         this.celular = celular;
     }
-
-    private String telefone;
-    private String celular;
 }

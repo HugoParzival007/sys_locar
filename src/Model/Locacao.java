@@ -11,6 +11,14 @@ public class Locacao {
     private float valorLocacao;
     private List<Ocorrencia> listOcorrencias = new ArrayList<>();
 
+    public Locacao(long id, Date dataDevolucao, Date dataRevolucao, float valorLocacao, List<Ocorrencia> listOcorrencias) {
+        this.id = id;
+        this.dataDevolucao = dataDevolucao;
+        this.dataRevolucao = dataRevolucao;
+        this.valorLocacao = valorLocacao;
+        this.listOcorrencias = listOcorrencias;
+    }
+
     public long getId() {
         return id;
     }

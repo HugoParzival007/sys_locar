@@ -4,6 +4,16 @@ public class Endereco {
     private long id;
     private String cep;
     private String logradouro;
+    private String numero;
+    private String referencia;
+
+    public Endereco(long id, String cep, String logradouro, String numero, String referencia) {
+        this.id = id;
+        this.cep = cep;
+        this.logradouro = logradouro;
+        this.numero = numero;
+        this.referencia = referencia;
+    }
 
     public long getId() {
         return id;
@@ -45,6 +55,4 @@ public class Endereco {
         this.referencia = referencia;
     }
 
-    private String numero;
-    private String referencia;
 }

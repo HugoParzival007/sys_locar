@@ -8,6 +8,13 @@ public class Categoria {
     private String nome;
     private float valorLocação;
 
+    public Categoria(long id, String nome, float valorLocação, List<Modelo> listaModelos) {
+        this.id = id;
+        this.nome = nome;
+        this.valorLocação = valorLocação;
+        this.listaModelos = listaModelos;
+    }
+
     public long getId() {
         return id;
     }
